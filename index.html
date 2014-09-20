@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+    <meta charset="UTF-8">
+    <title>place in space</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-left">image</div>
+        <div class="language-right">eng,ru,ua</div>
+        <div class="title-center">one minute - one place</div>
+    </div>
+
+    <div class="content">
+        <div id="map"></div>
+
+        <div class="info">
+            <div class="contacts">
+                <form>
+                    select your country:
+                    <select id="country" onchange="changeCityList()"></select>
+                    <br>and town:
+                    <select id="city" onchange="setInfo()"></select>
+                </form>
+            </div>
+
+            <div class="social_links">
+                <a href="https://vk.com/placeins" target="_blank">
+                    <img src="images/vk.png" alt="vk icon" height="32" width="32">
+                </a>
+                <a href="https://www.facebook.com/sakhnosfamily" target="_blank">
+                    <img src="images/fb.png" alt="facebook icon" height="32" width="32">
+                </a>
+
+                <a href="https://www.youtube.com/user/placeins" target="_blank">
+                    <img src="images/yt.png" alt="youtube icon" height="32" width="32">
+                </a>
+            </div>
+
+            <div class="sfc_logo">
+                <img id="sfc" src="images/sfc.png" alt="sfc logo" height="200px" width="200px">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="bottom_text">some another general info</div>
+        <div class="copyrights">2014c. easy-web.com</div>
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnt2vAMwFu6Qc1kur7E0kZ1aA8QFqs&sensor=true"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
