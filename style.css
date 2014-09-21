@@ -1,11 +1,11 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    
 }
 .logo-left {
     float: left;
@@ -23,14 +23,13 @@ html, body {
     background: orange;
 }
 #map {
+    width: auto;
     height: 100%;
-    width: 70%;
-    float: left;
     background: yellow;
 }
 .info {
-    margin-left: 70%;
-    width: 30%;
+    float: right;
+    width: 192px;
     background: white;
     height: 100%;
 }
@@ -57,48 +56,55 @@ html, body {
 .clear {
     clear: both;
 }
-
-
-
 .content {
+    min-width: 498px;
     height: 80%;
     overflow: hidden;
     background: red;
 }
-
-
-
-
-
 .social_links {
     margin-left: auto;
     margin-right: auto;
     height: 32px;
-    width: 96px;
+    width: 192px;
     background: gold;
 }
-
 .contacts {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
     height: 50%;
     background: yellow;
 }
-
 .sfc_logo {
     height: 40%;
     background: lightgreen;
 }
-
-
-
-
-
 #sfc {
     display: block;
     margin: auto;
 }
-
-
-
 img {
-    margin:0;padding:0;float:left;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#in {
+    color: red;
+}
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+select {
+    width: 120px;
+    float: right;
+}
+
+.stars {
+    background-image: url(http://www.14denoviembre.es/img/hori.png ), url(http://www.14denoviembre.es/img/stars_5.png );
+    background-repeat: repeat-x, repeat-x repeat-y;
 }
