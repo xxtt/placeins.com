@@ -1,85 +1,77 @@
 html,
 body {
+    font-family: sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+    min-height: 446px;
     max-width: 1200px;
 }
 .logo-left {
     float: left;
-    width: 30%;
-    background: olive;
+    width: auto;
 }
 .language-right {
     width: 20%;
     float: right;
-    background: gold;
 }
 .title-center {
     margin-left: 30%;
     margin-right: 20%;
-    background: orange;
+    font-weight: bold;
 }
 #map {
     width: auto;
     height: 100%;
-    background: yellow;
 }
 .info {
     float: right;
     width: 192px;
-    background: white;
     height: 100%;
 }
 .bottom_text {
-    width: 60%;
+    width: auto;
     float: left;
-    background: olive;
 }
 .copyrights {
-    width: 40%;
-    margin-left: 60%;
-    background: orange;
+    width: 192px;
+    float: right;
+    text-align: center;
 }
 .header {
-    height: 10%;
+    height: 64px;
     overflow: hidden;
-    background: coral;
+    text-align: center;
+    color: white;
 }
 .footer {
-    height: 10%;
     overflow: hidden;
-    background: coral;
+    height: auto;
+    color: white;
 }
 .clear {
     clear: both;
 }
 .content {
     min-width: 498px;
+    min-height: 364px;
     height: 80%;
     overflow: hidden;
-    background: red;
 }
 .social_links {
     margin-left: auto;
     margin-right: auto;
     height: 32px;
     width: 192px;
-    background: gold;
 }
 .contacts {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
     height: 50%;
-    background: yellow;
 }
 .sfc_logo {
+    margin-top: 20px;
     height: 40%;
-    background: lightgreen;
 }
 #sfc {
     display: block;
@@ -91,20 +83,36 @@ img {
     float: left;
 }
 #in {
-    color: red;
+    margin: 0;
+    padding: 0;
+    float: none;
 }
 h2,
 p {
     margin: 0;
     padding: 0;
+    margin-left: 5px;
     text-align: left;
+    color: white;
 }
 select {
+    font-family: sans-serif;
     width: 120px;
     float: right;
 }
-
 .stars {
-    background-image: url(http://www.14denoviembre.es/img/hori.png ), url(http://www.14denoviembre.es/img/stars_5.png );
+    background-image: url(images/hori.png), url(images/stars.png);
     background-repeat: repeat-x, repeat-x repeat-y;
+}
+.place {
+    float: left;
+    margin-top: 30px;
+}
+.space {
+    float: right;
+    margin-top: 30px;
+}
+.language {
+    color: red;
+    cursor: pointer;
 }

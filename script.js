@@ -5,7 +5,7 @@ var contacts = initContacts();
 function initialize() {
     var mapOptions = {
         zoom: 5,
-        center: new google.maps.LatLng(48.075001, 31.277330),
+        center: new google.maps.LatLng(48.241100, 17.392782),
         //        disableDefaultUI: true,
         zoomControl: false,
         streetViewControl: false,
@@ -121,6 +121,7 @@ function setContacts() {
 }
 
 function putCities(cities) {
+    var city = document.getElementById("city");
     for (i = 0; i < cities.length; i++) {
         var option = document.createElement("option");
         option.text = cities[i];
@@ -146,8 +147,4 @@ function changeCityList() {
             return;
         }
     }
-}
-
-function demo(){
- document.getElementById("demo").style.color = "red";
 }
