@@ -59,7 +59,7 @@ function initPair() {
     var england = {
         country: "Aнглия",
         cities: ["Лондон"],
-        price: "200 £"
+        price: "500 £"
     }
     var us = {
         country: "США",
