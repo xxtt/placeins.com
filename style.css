@@ -18,8 +18,7 @@ body {
     float: right;
 }
 .title-center {
-    margin-left: 30%;
-    margin-right: 20%;
+    text-align: left;
     font-weight: bold;
 }
 #map {
