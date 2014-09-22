@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>place in space</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <style>
         .glitch {
             color: white;
             margin-left: 30%;
             margin-right: 20%;
-            font-size: 14px;
+            font-size: 25px;
             position: relative;
-            margin-top: 30px;
+            margin-top: 16px;
         }
         @keyframes noise-anim {
             0% {
@@ -175,11 +175,7 @@
 <body class="stars">
     <div class="header">
         <div class="logo-left">
-            <span class="place"><b>Place</b>
-            </span>
-            <span class="space"><b>Space</b>
-            </span>
-            <img id="in" src="images/in.png" alt="in">
+            <img id="logo" src="images/logo.png" alt="place in space logo">
         </div>
         <div class="language-right">eng | <span class="language">ru</span> | ua</div>
         <div class="title-center glitch" data-text="one minute - one place">one minute - one place</div>
@@ -190,7 +186,7 @@
         <div class="info">
             <div class="contacts">
                 <form>
-                    <h2>контакты</h2>
+                    <h2 style="color:red;">контакты</h2>
 
                     <select id="country" onchange="changeCityList()"></select>
                     <p id="p_country">страна:</p>
@@ -201,8 +197,12 @@
                     <hr>
                     <p id="phone"></p>
                     <p id="email"></p>
-
                 </form>
+                <div id="price">
+                    <img id="board" src="images/board.png" alt="board">
+                    <p id="price_text">стоимость размещения:</p>
+                    <p id="price_value"></p>
+                </div>
             </div>
 
             <div class="social_links">
@@ -227,21 +227,21 @@
                     <img id="sfc" src="images/sfc.png" alt="sfc logo">
                 </a>
             </div>
-
-
         </div>
+
         <div id="map"></div>
     </div>
 
     <div class="footer">
         <div class="bottom_text"></div>
-        <div class="copyrights">2014 copyrights</div>
+        <div class="copyrights">2014 ©Taras Sakhno</div>
 
     </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnt2vAMwFu6Qc1kur7E0kZ1aA8QFqs&sensor=true"></script>
-    <script src="script.js"></script>
-    <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    <script src="js/script.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src='js/jquery.js'></script>
 </body>
 
 </html>

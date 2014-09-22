@@ -1,0 +1,128 @@
+html,
+body {
+    font-family: calibri, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 700px;
+    max-width: 1200px;
+}
+.logo-left {
+    float: left;
+    width: auto;
+}
+.language-right {
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: right;
+}
+.title-center {
+    text-align: left;
+    font-weight: bold;
+}
+#map {
+    width: auto;
+    height: 100%;
+}
+.info {
+    float: right;
+    width: 212px;
+    height: 100%;
+}
+.bottom_text {
+    width: auto;
+    float: left;
+}
+.copyrights {
+    width: 192px;
+    float: right;
+    text-align: right;
+}
+.header {
+    height: 64px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+.footer {
+    overflow: hidden;
+    min-height: 19px;
+    margin-right: 10px;
+    color: white;
+}
+.clear {
+    clear: both;
+}
+.content {
+    min-width: 498px;
+    min-height: 364px;
+    height: 88%;
+    overflow: hidden;
+}
+.social_links {
+    margin: 10px;
+    height: auto;
+    min-height: 52px;
+    width: 212px;
+}
+.contacts {
+    min-height: 333px;
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sfc_logo {
+    margin: 10px;
+    height: auto;
+    min-height: 212px;
+}
+#sfc {
+    display: block;
+    margin: auto;
+}
+img {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+}
+select {
+    font-family: calibri;
+    width: 120px;
+    float: right;
+}
+.stars {
+    background-image: url(../images/hori.png), url(../images/stars.png);
+    background-repeat: repeat-x, repeat-x repeat-y;
+}
+.language {
+    color: red;
+    cursor: pointer;
+}
+#price_value {
+    position: absolute;
+    top: 110px;
+    left: 60px;
+}
+#price {
+    position: relative;
+    font-family: cursive;
+    margin-top: 10px;
+}
+#price_text {
+    position: absolute;
+    font-size: 15px;
+    top: 70px;
+    left: 4px;
+}
