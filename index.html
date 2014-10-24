@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="PlaceInSpace is a free Apple App Store & Android Google Play app. Place In Space - One Minute One Place">
+    <meta name="keywords" content="PlaceInSpace, Place in Space, one minute one place, apple, app store, android, google play">
+    <meta name="author" content="Taras Sakhno">
     <title>PlaceInSpace</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="images/in.png">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.ico">
     <style>
         .glitch {
             color: white;
@@ -174,36 +178,55 @@
 </head>
 
 <body class="stars">
+
     <div class="header">
         <div class="logo-left">
             <img id="logo" src="images/logo.png" alt="place in space logo">
         </div>
-        <div class="language-right">eng | <span class="language">ru</span> | ua</div>
+        <div class="language-right"><b>
+            <span id="ru" onclick="changeRu()" class="language">рус</span> |
+            <span id="ua" onclick="changeUa()" class="language">укр</span> |
+            <span id="us" onclick="changeUs()" class="language">eng</span>
+            </b>
+        </div>
         <div class="title-center glitch" data-text="one minute - one place">one minute - one place</div>
     </div>
 
     <div class="content">
 
         <div class="info">
-            <div class="contacts">
-                <form>
-                    <h2 style="color:red;">контакты</h2>
 
-                    <select id="country" onchange="changeCityList()"></select>
-                    <p id="p_country">страна:</p>
-                    <div class="clear"></div>
-                    <select id="city" onchange="setContacts()"></select>
-                    <p id="p_city">город:</p>
-                    <div class="clear"></div>
-                    <hr>
-                    <p id="phone"></p>
-                    <p id="email"></p>
-                </form>
-                <div id="price">
-                    <img id="board" src="images/board.png" alt="board">
-                    <p id="price_text">стоимость размещения:</p>
-                    <p id="price_value"></p>
-                </div>
+            <div class="categories">
+                <h2 id="category" class="group"></h2>
+                <select class="selection" id="categoryList" onchange="showCategory()"></select>
+                <br>
+                <hr>
+                <br>
+            </div>
+
+            <div class="places">
+                <h2 id="place" class="group"></h2>
+                <select class="selection" id="placeList" onchange="showPlace()"></select>
+                <br>
+                <hr>
+                <br>
+            </div>
+
+
+            <div class="contacts">
+                <h2 id="contacts" class="group"></h2>
+                <br>
+                <select id="country" onchange="changeCityList()"></select>
+                <p id="p_country"></p>
+                <div class="clear"></div>
+                <select id="city" onchange="setContacts()"></select>
+                <p id="p_city"></p>
+                <div class="clear"></div>
+                <br>
+                <hr>
+                <p id="phone"></p>
+                <p id="email"></p>
+                <hr>
             </div>
 
             <div class="social_links">
@@ -219,7 +242,9 @@
                 <a href="https://twitter.com/sakhnosfamily" target="_blank">
                     <img src="images/tw.png" alt="youtube icon" height="32" width="32">
                 </a>
-                <img src="images/android.png" alt="youtube icon" height="32" width="32">
+                <a href="https://play.google.com/store/apps/details?id=com.app.xx.placeinspace" target="_blank">
+                    <img src="images/android.png" alt="youtube icon" height="32" width="32">
+                </a>
                 <img src="images/apple.png" alt="youtube icon" height="32" width="32">
             </div>
 
@@ -228,21 +253,26 @@
                     <img id="sfc" src="images/sfc.png" alt="sfc logo">
                 </a>
             </div>
+
         </div>
 
         <div id="map"></div>
+
     </div>
 
     <div class="footer">
         <div class="bottom_text"></div>
         <div class="copyrights">2014 ©Taras Sakhno</div>
-
     </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnt2vAMwFu6Qc1kur7E0kZ1aA8QFqs&sensor=true"></script>
-    <script src="js/script.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src='js/jquery.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script src="js/language.js"></script>
+    <script src="js/contacts.js"></script>
+
+    <script src="js/map.js"></script>
+
 </body>
 
 </html>

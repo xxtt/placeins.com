@@ -6,8 +6,9 @@ body {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    min-height: 700px;
-    max-width: 1200px;
+    min-height: 800px;
+    min-width: 550px;
+    max-width: 1400px;
 }
 .logo-left {
     float: left;
@@ -32,6 +33,7 @@ body {
     float: right;
     width: 212px;
     height: 100%;
+    margin-left: 20px;
 }
 .bottom_text {
     width: auto;
@@ -65,20 +67,16 @@ body {
 }
 .social_links {
     margin: 10px;
-    height: auto;
-    min-height: 52px;
+    height: 52px;
     width: 212px;
 }
 .contacts {
-    min-height: 333px;
-    height: 50%;
     margin-left: 10px;
     margin-right: 10px;
 }
 .sfc_logo {
     margin: 10px;
-    height: auto;
-    min-height: 212px;
+    height: 192px;
 }
 #sfc {
     display: block;
@@ -91,15 +89,15 @@ img {
 }
 h2,
 p {
+    text-align: center;
     margin: 0;
     padding: 0;
     margin-left: 5px;
-    text-align: center;
     color: white;
 }
 select {
     font-family: calibri;
-    width: 120px;
+    width: 130px;
     float: right;
 }
 .stars {
@@ -107,24 +105,12 @@ select {
     background-repeat: repeat-x, repeat-x repeat-y;
 }
 .language {
-    color: red;
     cursor: pointer;
 }
-#price_value {
-    position: absolute;
-    top: 100px;
-    left: 45px;
-    font-size: 30px;
-    
+.group {
+    color: red;
 }
-#price {
-    position: relative;
-    font-family: cursive;
-    margin-top: 10px;
-}
-#price_text {
-    position: absolute;
-    font-size: 15px;
-    top: 70px;
-    left: 4px;
+.selection {
+    width: 180px;
+    margin: 20px;
 }
