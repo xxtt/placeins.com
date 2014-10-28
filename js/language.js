@@ -16,7 +16,7 @@ function changeRu() {
 
     categoryText.innerHTML = "выбор рубрики";
     placeText.innerHTML = "список мест";
-    contactsText.innerHTML = "нашы контакты";
+    contactsText.innerHTML = "КОНТАКТЫ";
     p_country.innerHTML = "страна";
     p_city.innerHTML = "город";
 
@@ -35,7 +35,7 @@ function changeUa() {
 
     categoryText.innerHTML = "вибір рубрики";
     placeText.innerHTML = "список місць";
-    contactsText.innerHTML = "наші контакти";
+    contactsText.innerHTML = "КОНТАКТИ";
     p_country.innerHTML = "країна";
     p_city.innerHTML = "місто";
 
@@ -53,7 +53,7 @@ function changeUs() {
 
     categoryText.innerHTML = "choose place";
     placeText.innerHTML = "place list";
-    contactsText.innerHTML = "our contacts";
+    contactsText.innerHTML = "CONTACTS";
     p_country.innerHTML = "country";
     p_city.innerHTML = "city";
 
@@ -64,4 +64,4 @@ function changeUs() {
     initContactMenus();
 }
 
-changeRu();
+changeUa();

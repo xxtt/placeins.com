@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    min-height: 855px;
+    min-height: 800px;
     min-width: 550px;
     max-width: 1400px;
     
@@ -119,10 +119,4 @@ select {
 .selection {
     width: 180px;
     margin: 20px;
-}
-#link {
-    text-overflow: ellipsis;
-    width: 300px;
-    white-space: nowrap;
-    overflow: hidden;
 }

@@ -41,17 +41,6 @@
               position: myLocation,
               map: map,
           });
-          infoWindow = new google.maps.InfoWindow({
-              content: "<b>вы тут</b>"
-          });
-
-          infoWindow.setOptions({
-              maxWidth: 400
-          });
-          google.maps.event.addListener(marker, 'click', function () {
-              infoWindow.open(map, marker);
-          });
-
           map.setCenter(myLocation);
           map.setZoom(12);
           IsLocationMarkerThere = true;
@@ -199,10 +188,9 @@
 
       var content = "<b>" + place.title + "</b>" + "<br>" + getAbout(place) + "<br>" + icons + "<br>" +
           yt + "<br>" + place.phone + "<br>" + getAddress(place) +
+          "<a href='" + place.link + "' target='_blank'><div id='link'>" + place.link + "</div></a>" +
           "<img style='float:right;cursor: pointer;' src='images/directions.png' alt='directions' onclick='showRoute()'>" +
-          "<br>" + "<a href='" + place.link + "' target='_blank'>" + place.link + "</a><br><br>" +
-          getNews(place);
-
+          "" + getNews(place);
       return content;
   }
 
@@ -261,9 +249,10 @@
       }
 
       for (i = 0; i < presentCategoryList.length; i++) {
+          var category = presentCategoryList[i];
           var option = document.createElement("option");
-          option.text = categoryNameList[i];
-          option.value = presentCategoryList[i];
+          option.text = categoryNameList[category];
+          option.value = category;
           list.add(option, i);
       }
   }
@@ -271,11 +260,53 @@
   function getCategoryNameList() {
       switch (LANGUAGE) {
       case "ru":
-          return ["Все рубрики", "Рестораны", "Пабы и бары", "Кофе и Чай", "Здоровье и Медицина", "Шопинг", "Ночная жизнь", "Искусство и Развлечение", "Интелектуальные клубы", "Спорт и Фитнес", "Салоны и СПА", "Отели и хостелы", "PlaceInCity", "Другое", "ЦЕНТРАЛЬНЫЙ ОФИС"];
+          return ["Все рубрики",
+                  "Рестораны",
+                  "Пабы и бары",
+                  "Кофе и Чай",
+                  "Здоровье и Медицина",
+                  "Шопинг",
+                  "Ночная жизнь",
+                  "Искусство и Развлечение",
+                  "Интелектуальные клубы",
+                  "Спорт и Фитнес",
+                  "Салоны и СПА",
+                  "Отели и хостелы",
+                  "PlaceInCity",
+                  "Другое",
+                  "ЦЕНТРАЛЬНЫЙ ОФИС"];
       case "us":
-          return ["All places", "Restaurants", "Pubs & Bars", "Coffee & Tea", "Health & Medical", "Shopping", "Nightlife", "Arts & Entertainment", "Intellectual clubs", "Sport & Fitness", "Beauty & Spa", "Hotels & Hostels", "PlaceInCity", "Other", "CENTRAL OFFICE"];
+          return ["All places",
+                  "Restaurants",
+                  "Pubs & Bars",
+                  "Coffee & Tea",
+                  "Health & Medical",
+                  "Shopping",
+                  "Nightlife",
+                  "Arts & Entertainment",
+                  "Intellectual clubs",
+                  "Sport & Fitness",
+                  "Beauty & Spa",
+                  "Hotels & Hostels",
+                  "PlaceInCity",
+                  "Other",
+                  "CENTRAL OFFICE"];
       case "ua":
-          return ["Всі рубрики", "Ресторани", "Паби і бари", "Кава та Чай", "Здоров\'я та Медицина", "Шопінг", "Нічне життя", "Мистецтво та Розваги", "Інтелектуальні клубы", "Спорт і Фітнес", "Салони та СПА", "Готелі та Хостели", "PlaceInCity", "Інше", "ЦЕНТРАЛЬНИЙ ОФІС"];
+          return ["Всі рубрики",
+                  "Ресторани",
+                  "Паби і бари",
+                  "Кава та Чай",
+                  "Здоров\'я та Медицина",
+                  "Шопінг",
+                  "Нічне життя",
+                  "Мистецтво та Розваги",
+                  "Інтелектуальні клубы",
+                  "Спорт і Фітнес",
+                  "Салони та СПА",
+                  "Готелі та Хостели",
+                  "PlaceInCity",
+                  "Інше",
+                  "ЦЕНТРАЛЬНИЙ ОФІС"];
       }
   }
 
