@@ -9,7 +9,6 @@ body {
     min-height: 855px;
     min-width: 550px;
     max-width: 1400px;
-    
     background: url(../images/space.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,12 +26,17 @@ body {
     margin-right: 10px;
     text-align: right;
 }
-.title-center {
+#title-center {
+    position: relative;
     text-align: left;
     font-weight: bold;
+    color: white;
+    margin-left: 30%;
+    margin-right: 20%;
+    font-size: 25px;
+    margin-top: 16px;
 }
 #map {
-    width: auto;
     height: 100%;
 }
 .info {
